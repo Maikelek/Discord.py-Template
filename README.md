@@ -19,7 +19,7 @@ Discord Bot template with most of functions for people to make their own discord
 * Script for keeping bot alive 24/7
 * Information about server/users
 
-### Help users:
+### Other functions:
 * Store data in files/databases
 * Send files
 * Presence changer
