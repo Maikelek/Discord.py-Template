@@ -98,8 +98,8 @@ async def function4(ctx, message=None):
         await ctx.send('Enter .function4 "your message"')
     else:
         currentTime = datetime.datetime.now()
-        timePlus = datetime.timedelta(hours=2)
-        currentTime = currentTime + timePlus #Adding +2 hours to actual time to match timezone - depends on where you live
+        #timePlus = datetime.timedelta(hours=2) #This can be used to add +2 hours to the actual time
+        #currentTime = currentTime + timePlus
         file = open(f"{ctx.message.author.name}.txt", "a")
         file.write((currentTime.strftime("\n%Y-%m-%d %H:%M:%S " + message + "\n")))
         file.close()
@@ -229,8 +229,6 @@ async def on_message(message): #He does not respond to his own words
     
     if isinstance(message.channel,discord.DMChannel): #Bot will save every Dm sent to him to a file.
         currentTime = datetime.datetime.now()
-        timePlus = datetime.timedelta(hours=2)
-        currentTime = currentTime + timePlus
         file = open(f"botDM.txt", "a")
         file.write((currentTime.strftime("\n%Y-%m-%d %H:%M:%S "+ ": " + message.author.name + ": " + message.content + "\n")))
         file.close()
