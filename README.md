@@ -25,5 +25,17 @@ Discord Bot template with most of functions for people to make their own discord
 * Presence changer
 * React to words
 
+### Getting started:
+- Download dependencies
+```
+pip install -r requirements.txt
+```
+- Customize commands to your likeness
+- Insert your bot token - main.py line:244
+- Run bot with command:
+```
+python3 main.py
+```
+
 # Made by
 ![-Made by Maikelek-](https://cdn.discordapp.com/attachments/941114244064239647/1036391535815704576/3000.png)
